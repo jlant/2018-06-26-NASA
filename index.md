@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "NASA Goddard Space Flight Center, Barney and Bea Recreation Center, Building 92 (https://www.nasa.gov/sites/default/files/atoms/files/goddard_space_flight_center_map_tagged.pdf)"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "NASA Goddard Space Flight Center"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "10000 Good Luck Rd, 14, Bowie, MD 20771"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -92,7 +92,9 @@ and our administrator may contact you if we need any extra information.</h4>
 {% if page.latlng %}
 <p id="where">
   <strong>Where:</strong>
-  {{page.address}}.
+  {{page.address}}, Barney and Bea Recreation Center, Building 92.
+  Please see the
+  <a href="https://www.nasa.gov/sites/default/files/atoms/files/goddard_space_flight_center_map_tagged.pdf">Goddard Map</a>.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
